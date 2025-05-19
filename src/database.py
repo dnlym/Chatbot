@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")

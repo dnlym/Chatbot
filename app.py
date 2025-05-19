@@ -6,7 +6,21 @@ from src.chatbot import medical_chatbot
 
 
 st.set_page_config(page_title='🤖 MediBot', layout='centered', page_icon='🤖')
-st.title("🤖 MediBot Chat AI")
+# st.title("🤖 MediBot Chat AI")
+
+# --- Tiêu đề gọn và sát mép trên ---
+st.markdown(
+    """
+    <style>
+        .appview-container .main .block-container{padding-top:0.5rem;}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+st.markdown(
+    "<h3 style='text-align:center; margin-top:0;'>🤖 MediBot Chat AI</h3>",
+    unsafe_allow_html=True,
+)
 
 # adding session state to each user session
 session_id = random.randint(0, 100000)
