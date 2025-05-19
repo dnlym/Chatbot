@@ -9,18 +9,22 @@ st.set_page_config(page_title='🤖 MediBot', layout='centered', page_icon='🤖
 # st.title("🤖 MediBot Chat AI")
 
 # --- Tiêu đề gọn và sát mép trên ---
+
 st.markdown(
     """
     <style>
-        .appview-container .main .block-container{padding-top:0.5rem;}
+        .custom-title {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0;
+        }
     </style>
+    <div class="custom-title">🤖 MediBot Chat AI</div>
     """,
-    unsafe_allow_html=True,
+    unsafe_allow_html=True
 )
-st.markdown(
-    "<h3 style='text-align:center; margin-top:0; padding: 1rem 1rem 1rem; font-weight: bold;'>🤖 MediBot Chat AI</h3>",
-    unsafe_allow_html=True,
-)
+
 
 # adding session state to each user session
 session_id = random.randint(0, 100000)
@@ -30,7 +34,7 @@ if "session_id" not in st.session_state:
 
 # initial message
 INIT_MESSAGE = {"role": "assistant",
-                "content": "Hello! I am you MediBot Chat Agent, I will help answer all questions you might have about Medicine."}
+                "content": "Xin chào! Bạn muốn biết gì về các bệnh lý trong Y học nào?"}
 
 
 if "messages" not in st.session_state:
