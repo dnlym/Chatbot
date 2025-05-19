@@ -18,7 +18,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 st.markdown(
-    "<h3 style='text-align:center; margin-top:0;'>🤖 MediBot Chat AI</h3>",
+    "<h3 style='text-align:center; margin-top:0; padding: 1rem 1rem 1rem; font-weight: bold;'>🤖 MediBot Chat AI</h3>",
     unsafe_allow_html=True,
 )
 
